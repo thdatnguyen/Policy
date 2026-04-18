@@ -1,0 +1,46 @@
+# Privacy Policy for Loa Loa
+
+**Effective Date: April 18, 2026**
+
+This Privacy Policy explains how the **Loa Loa** application ("the App", "we", "us", or "our") handles your data. We respect your privacy and are deeply committed to protecting your personal information.
+
+The core functionality of Loa Loa is to assist users by reading aloud financial transaction notifications (like banking and e-wallet transfers) using Text-to-Speech (TTS). Because of this, the App requests access to sensitive device permissions, specifically the **Notification Access** permission.
+
+## 1. Information We Collect and Process
+
+### Notification Data
+To provide its core functionality, the App requires the `BIND_NOTIFICATION_LISTENER_SERVICE` permission. When granted:
+- The App listens to incoming notifications on your device.
+- The App **strictly filters** these notifications locally on your device. It only processes notifications from a pre-defined list of supported banking and e-wallet applications.
+- From these selected notifications, the App extracts transaction amounts and app names to read them aloud to you using the device's native Text-to-Speech engine.
+
+### We Do Not Collect Personal Information
+- **No Cloud Storage:** We do not upload, sync, or transmit your notification data, transaction data, bank balances, or personal messages to any external servers.
+- **Local Processing Only:** All parsing, filtering (using Regex and Google ML Kit Entity Extraction), and processing happen entirely **on-device**.
+- **No Tracking:** We do not use third-party analytics trackers, crash reporting tools that collect personal data, or advertising networks that track your behavior.
+
+## 2. Permissions We Request
+
+The App requests the following permissions to function:
+
+- **Notification Access (`BIND_NOTIFICATION_LISTENER_SERVICE`):** Required to detect incoming banking and e-wallet notifications so they can be read aloud.
+- **Foreground Service (`FOREGROUND_SERVICE` / `WAKE_LOCK`):** Required to keep the notification listener running reliably in the background to ensure you do not miss transaction alerts.
+- **Billing:** Used solely for processing lifetime premium upgrades via Google Play Billing. We do not have access to your credit card or payment credentials.
+
+## 3. Third-Party Services
+The App utilizes the following on-device third-party services:
+- **Google ML Kit:** Used entirely on-device to accurately parse amounts from complex notification texts. No data is sent to Google's servers for this processing.
+- **Google Play Billing:** Used for processing in-app purchases. Google maintains its own privacy policies regarding payment processing.
+
+## 4. Children’s Privacy
+Our App does not intentionally target children under the age of 13. Since the App is meant for interpreting banking and e-wallet transactions, it is intended for users who are legally allowed to hold financial accounts. If you are under 13, please do not use this application.
+
+## 5. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.
+
+## 6. Contact Us
+If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
+- **Email/Contact:** [Vui lòng điền email liên hệ của bạn tại đây]
+
+---
+*By using the Loa Loa app, you consent to our Privacy Policy regarding the local processing of your notification data as described above.*
